@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MedAI</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #007bff; /* Set the background color to blue */
+        color: #fff; /* Set text color to white */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: rgba(0, 123, 255, 0.8); /* Set the background color with transparency */
+        padding: 20px;
+        color: #fff; /* Set text color to white */
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .navbar-brand:hover {
+        color: #28a745;
+    }
+
+    main {
+        padding: 120px 20px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #ff5722; /* Orange color */
+        font-size: 48px; /* Increase font size */
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px; /* Increase font size */
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: #ff9800; /* Dark orange color */
+        font-size: 30px; /* Increase font size */
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #4caf50; /* Green color */
+        font-size: 36px; /* Increase font size */
+        margin-bottom: 40px;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50; /* Green color */
+        color: #fff; /* Set text color to white */
+        padding: 15px 30px;
+        font-size: 24px; /* Increase font size */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #388e3c; /* Dark green color */
+    }
+
+    /* Logo and Navbar Hover Effects */
+    .logo:hover img {
+        transform: rotate(360deg);
+    }
+
+    nav:hover {
+        background-color: #1976d2; /* Darker blue color */
+    }
+
+    /* Center the form */
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <h1>MedAI: Your Health Companion</h1>
+  <p>Welcome to MedAI, your intelligent healthcare assistant! We're here to help you make informed decisions about your health. Our AI algorithms provide personalized recommendations and insights based on your symptoms and medical history.</p>
+  <h3>Start Your Health Journey with MedAI</h3>
+  <h2>Click the button below to get started</h2>
+</main>
+<form action="/predict">
+  <input type="submit" id="Get_Started" name="Get_Started" value="Get Started">
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    /* margin: 0;
+    padding: 0; */
+    
+    height: 50%;
+    background: url('/static/image1.jpg') center/cover fixed;;
+   
+    /* font-family: Arial, sans-serif; */
+    /* Add the filter property for brightness adjustment */
+    /* filter: brightness(30%); Adjust the percentage to control brightness */
+}
